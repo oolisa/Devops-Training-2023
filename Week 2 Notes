@@ -1,6 +1,11 @@
 Week 2 Project Notes : 
 https://slides.com/raghuk/devops
 https://learndevopsonline.github.io/learndevopsonline/build/docs/How-Tos/increase-spot-quota/
+https://learndevopsonline.github.io/learndevopsonline/build/docs/RoboShop-Project/project-overview
+
+Create Security Group "allow-all" and add spot instances to be used during the Project.
+Make sure to select t3.micro
+Cannot delete spot instances from the spot requests console. Make sure if you want to delete you select cancel spot request in the Spot Request area.
 
 
 
