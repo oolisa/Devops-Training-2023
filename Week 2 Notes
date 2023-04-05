@@ -4,7 +4,7 @@ https://learndevopsonline.github.io/learndevopsonline/build/docs/How-Tos/increas
 https://learndevopsonline.github.io/learndevopsonline/build/docs/RoboShop-Project/project-overview
 
 Create Security Group "allow-all" and add spot instances to be used during the Project.
-Make sure to select t3.micro
+Make sure to select t3.micro and in Advance details select Request Spot Instance and change instance termination behaviour to stop and Request type to Persistent.
 Cannot delete spot instances from the spot requests console. Make sure if you want to delete you select cancel spot request in the Spot Request area.
 
 
