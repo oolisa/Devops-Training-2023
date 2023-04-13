@@ -82,3 +82,6 @@ Start the service.
 
 systemctl enable dispatch 
 systemctl start dispatch
+
+
+Tip: Make sure to start service on FrontEnd, Payment and Dispatch and make sure they are running.
