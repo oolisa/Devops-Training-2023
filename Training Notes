@@ -16,6 +16,20 @@ https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#Instances:
 https://www.geeksforgeeks.org/how-to-use-chrome-developer-tools-for-api-testing/
 
 
+Cloud9 Environment
+
+https://us-east-1.console.aws.amazon.com/cloud9control/home?region=us-east-1#/
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+
+Make sure to use personal token when you do git push on Cloud9
+
+git config --global user.email "olatunbosun.olisa93@gmail.coom"
+    3  git config --global user.name "oolisa"
+    4  git push
+    5  ll
+    6  cd Devops-Training-2023/
+    7  git push
+    
 
 
 
