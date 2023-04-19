@@ -26,3 +26,21 @@ echo -e "\e[34m>>>>>>>>> Install dependencies for NodeJs <<<<<<<<\e[0m"
 cd /app 
 npm install 
 
+echo -e "\e[34m>>>>>>>>> Copy catalogue service SystemD <<<<<<<<\e[0m"
+cp ${script_path}/catalogue.service /etc/systemd/system/catalogue.service
+
+echo -e "\e[34m>>>>>>>>> Start the Catalogue Service <<<<<<<<\e[0m"
+systemctl daemon-reload
+systemctl enable catalogue 
+systemctl start catalogue
+
+echo -e "\e[34m>>>>>>>>> Copy the Mongo repo <<<<<<<<\e[0m"
+cp ${script_path}/mongo.repo /etc/yum.repos.d/mongo.repo
+
+echo -e "\e[34m>>>>>>>>> Install the MongoDB client <<<<<<<<\e[0m"
+yum install mongodb-org-shell -y
+
+echo -e "\e[34m>>>>>>>>> Load the Schema <<<<<<<<\e[0m"
+mongo --host mongodb-otdynamic.online </app/schema/catalogue.js
+
+
